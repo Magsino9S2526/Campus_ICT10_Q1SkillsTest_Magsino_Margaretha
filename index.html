@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>SKU Generator</title>
+</head>
+
+<body>
+    <nav>
+        <a href="sku.html">SKU Generator</a>
+        <a href="index.html">Receipt Generator</a>
+    </nav>
+    
+    <main>
+        <div class="sku-box">
+            <div class="sku-header">
+                <h2>SKU Generator</h2>
+            </div>
+            
+            <div class="sku-content">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="BEV">Poké Puffs</option>
+                    <option value="DRK">Brocks Special Stew</option>
+                    <option value="YUZ">Malasadas</option>
+                    <option value="CHO"> Decorative Curry</option>
+                    <option value="FRA"> Rich Plenty of Apples Toast Curry</option>
+                </select>
+
+
+                <label for="product_name">Awesome Foods</label>
+                <select id="product_name">
+                    <option value="Poké Puffs">
+                        Poké Puffs
+                    </option>
+                    <option value="Brocks Special Stew">
+                    Brocks Special Stew            
+                   </option>
+                    <option value="Malasadas">
+                        Malasadas
+                    </option>
+                    <option value="Decorative Curry">
+                        Decorative Curry 
+                    </option>
+                    <option value="Rich Plenty of Apples Toast Curry">
+                        Rich Plenty of Apples Toast Curry 
+                    </option>
+                </select>
+                
+                <label for="stock_quantity">
+                    Stock Quantity
+                </label>
+                <input type="number" id="stock_quantity" placeholder="e.g. 50">
+                
+                <button type="button" py-click="generate_sku">Generate SKU</button>
+
+
+                <!-- shows the SKU -->
+                <h3 id="sku-output">---</h3> 
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        SKU GENERATOR • ICT10 1st Quarter Project
+    </footer>
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
